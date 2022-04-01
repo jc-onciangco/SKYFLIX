@@ -79,7 +79,9 @@ const FilterGenres = () => {
     const dispatch = useDispatch()
     const { selectedGenres , previousSelectedGenres } = useSelector(state => state.filter)
     const router = useRouter()
-    const genres = router.query.show==='movie'? useGetMovieGenresQuery() : useGetTvGenresQuery()
+    const moviesGenres = useGetMovieGenresQuery() 
+    const tvsGenres = useGetTvGenresQuery()
+    const genres = router.query.show==='movie'? moviesGenres : tvsGenres
    
     //trigger when "selectedGenres" change by means of selecting genre.
     useEffect(() => {

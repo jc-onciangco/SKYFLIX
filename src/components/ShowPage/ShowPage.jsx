@@ -93,7 +93,7 @@ const StatInfoMobile = ({data}) => {
                 <div className="flex items-center gap-4">
                     <div className="homepage">
                         <div className="h-[1.5rem] lg:h-[1.8rem] aspect-square">
-                            <a href={data.homepage} target="_blank">
+                            <a without rel="noreferrer" href={data.homepage} target="_blank">
                                 <FontAwesomeIcon icon={faLink} color="#DFAE14" height={'100%'} />
                             </a>
                         </div>
@@ -105,7 +105,7 @@ const StatInfoMobile = ({data}) => {
                             .map((id, index) => {
                                 return (
                                     <li key={id.id} className="h-[1.6rem] lg:h-[1.8rem] aspect-square">
-                                        <a href={`https://www.${id.name}.com/${id.external_id}`} target="_blank">
+                                        <a without rel="noreferrer" href={`https://www.${id.name}.com/${id.external_id}`} target="_blank">
                                             <FontAwesomeIcon icon={brands.find(brand => brand.name === id.name).icon} color="#DFAE14" height={'100%'} />
                                         </a>
                                     </li>
