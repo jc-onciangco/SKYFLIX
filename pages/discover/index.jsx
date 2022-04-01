@@ -1,7 +1,7 @@
 //view
 import DiscoverPageView from '../../src/views/DiscoverPageView'
-import { useRouter } from 'next/dist/client/router'
-const discover = () => {
+import { useRouter } from 'next/router'
+const Discover = () => {
     const router = useRouter()
 
     if (router.isReady && router.asPath === '/discover') {
@@ -13,4 +13,4 @@ const discover = () => {
     )
 }
 
-export default discover
+export default Discover

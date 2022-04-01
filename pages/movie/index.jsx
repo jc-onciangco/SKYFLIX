@@ -1,7 +1,7 @@
 //view
 import MoviePageView from '../../src/views/MoviePageView'
 import { useRouter } from 'next/dist/client/router'
-const movie = () => {
+const Movie = () => {
     const router = useRouter()
 
     if (router.isReady && router.asPath === '/movie') {
@@ -13,4 +13,4 @@ const movie = () => {
     )
 }
 
-export default movie
+export default Movie

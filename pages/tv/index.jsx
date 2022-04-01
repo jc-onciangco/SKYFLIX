@@ -2,7 +2,7 @@
 import TvPageView from '../../src/views/TvPageView'
 import { useRouter } from 'next/dist/client/router'
 
-const tv = () => {
+const Tv = () => {
     const router = useRouter()
 
     if (router.isReady && router.asPath === '/tv') {
@@ -15,4 +15,4 @@ const tv = () => {
     )
 }
 
-export default tv
+export default Tv

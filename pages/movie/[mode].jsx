@@ -1,7 +1,7 @@
 import MoviePageView from '../../src/views/MoviePageView'
 import ShowPageView from '../../src/views/ShowPageView'
 import { useRouter } from 'next/dist/client/router'
-const mode = () => {
+const Mode = () => {
     const router = useRouter()
     const modes = [ 'popular' , 'now_playing' , 'upcoming' , 'top_rated' ]
 
@@ -18,4 +18,4 @@ const mode = () => {
     
 }
 
-export default mode
+export default Mode

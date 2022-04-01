@@ -1,7 +1,7 @@
 //view
 import PersonPageView from '../../src/views/PersonPageView'
 import { useRouter } from 'next/dist/client/router'
-const person = () => {
+const Person = () => {
     const router = useRouter()
 
     if (router.isReady && router.asPath === '/person') {
@@ -13,4 +13,4 @@ const person = () => {
     )
 }
 
-export default person
+export default Person

@@ -1,8 +1,8 @@
 import DiscoverPageView from '../../src/views/DiscoverPageView'
-const mode = () => {
+const Mode = () => {
     return (
         <DiscoverPageView />
     )
 }
 
-export default mode
+export default Mode
